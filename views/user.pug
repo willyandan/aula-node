@@ -1,0 +1,10 @@
+extends layout
+block content
+  .container
+    h1=user.title
+    ul
+      li id: #{user.id}
+      if user.completed
+        li Completo
+      else
+        li Incompleto

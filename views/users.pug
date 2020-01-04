@@ -1,0 +1,10 @@
+extends layout
+include components/userCard
+block content
+  .container
+    h1 Usuários
+    .row
+      each user in users
+        .col-sm-4
+          +userCard(user.id, user.title)
+          br
